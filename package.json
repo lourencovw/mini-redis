@@ -1,0 +1,21 @@
+{
+  "name": "mini-redis",
+  "version": "1.0.0",
+  "description": "Subset of the Redis command set.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "serve": "node server.js",
+    "mini-redis-cli": "node index"
+  },
+  "author": "Lourenco Werneck",
+  "license": "ISC",
+  "dependencies": {
+    "check-types": "^11.1.2",
+    "express": "^4.17.1",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}
