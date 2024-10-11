@@ -7,9 +7,9 @@ test("'SET key value' returns 'OK'", () => {
     expect(mn.validation('SET key value')).toBe('OK');
 });
 
-// test("'SET key' returns 'Check options'", () => {
-//     expect(mn.validation('SET key')).toBe(colors.red('Check options'));
-// });
+test("'SET key' returns 'Check options'", () => {
+    expect(mn.validation('SET key')).toBe(colors.red('Check options'));
+});
 
 // test("'SET key value EX' returns 'Check options'", () => {
 //     expect(mn.validation('SET key value EX')).toBe(colors.red('Check options'));
