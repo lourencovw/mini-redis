@@ -92,7 +92,7 @@ test('fibonacci', () => {
     expect(mn.fibonacciIterative(3)).toBe(2);
     expect(mn.fibonacciIterative(4)).toBe(3);
     expect(mn.fibonacciIterative(5)).toBe(5);
-    expect(mn.fibonacciIterative(6)).toBe(2);
+    expect(mn.fibonacciIterative(6)).toBe(8);
 });
 // test('rungeKutta', () => {
 //     expect(mn.rungeKutta((x, y) => x + y, 0, 1, 1, 10)).toBe(22026.465794806718);
