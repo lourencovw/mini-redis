@@ -134,6 +134,14 @@ class MiniRedis {
         const hasThisKey = keys.includes(key);
         return hasThisKey;
     }
+
+    fictionalFunctionSum(add1, add2) {
+        return add1 + add2;
+    }
+
+    fictionalFunctionMinus(add1, add2) {
+        return add1 + add2;
+    }
 }
 
 module.exports = MiniRedis;
