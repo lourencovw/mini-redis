@@ -1,4 +1,4 @@
-const MiniRedis = require('./src/mini-redis');
+const MiniRedis = require('../src/mini-redis');
 var colors = require("colors/safe");
 
 const mn = new MiniRedis();
