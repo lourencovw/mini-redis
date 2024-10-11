@@ -85,15 +85,15 @@ test('fibonacci', () => {
     expect(mn.fibonacci(5)).toBe(5);
     expect(mn.fibonacci(6)).toBe(8);
 });
-// test('fibonacci', () => {
-//     expect(mn.fibonacciIterative(0)).toBe(0);
-//     expect(mn.fibonacciIterative(1)).toBe(1);
-//     expect(mn.fibonacciIterative(2)).toBe(1);
-//     expect(mn.fibonacciIterative(3)).toBe(2);
-//     expect(mn.fibonacciIterative(4)).toBe(3);
-//     expect(mn.fibonacciIterative(5)).toBe(5);
-//     expect(mn.fibonacciIterative(6)).toBe(8);
-// });
+test('fibonacci', () => {
+    expect(mn.fibonacciIterative(0)).toBe(0);
+    expect(mn.fibonacciIterative(1)).toBe(1);
+    expect(mn.fibonacciIterative(2)).toBe(1);
+    expect(mn.fibonacciIterative(3)).toBe(2);
+    expect(mn.fibonacciIterative(4)).toBe(3);
+    expect(mn.fibonacciIterative(5)).toBe(5);
+    expect(mn.fibonacciIterative(6)).toBe(2);
+});
 // test('rungeKutta', () => {
 //     expect(mn.rungeKutta((x, y) => x + y, 0, 1, 1, 10)).toBe(22026.465794806718);
 // }   );
