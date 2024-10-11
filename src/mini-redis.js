@@ -134,49 +134,6 @@ class MiniRedis {
         const hasThisKey = keys.includes(key);
         return hasThisKey;
     }
-
-    fictionalFunctionSum(add1, add2) {
-        return add1 + add2;
-    }
-
-    fictionalFunctionMinus(add1, add2) {
-        return add1 + add2;
-    }
-
-    fibonacci(n) {
-        if (n <= 1) {
-            return n;
-        } else {
-            return this.fibonacci(n - 1) + this.fibonacci(n - 2);
-        }
-    }
-
-    fibonacciIterative(n) {
-        let a = 0;
-        let b = 1;
-        let c = 0;
-        for (let i = 0; i < n; i++) {
-            c = a + b;
-            a = b;
-            b = c;
-        }
-        return a;
-    }
-
-    rungeKutta(f, x0, y0, x, n) {
-        let h = (x - x0) / n;
-        let k1, k2, k3, k4;
-        let y = y0;
-        for (let i = 0; i < n; i++) {
-            k1 = h * f(x0, y);
-            k2 = h * f(x0 + 0.5 * h, y + 0.5 * k1);
-            k3 = h * f(x0 + 0.5 * h, y + 0.5 * k2);
-            k4 = h * f(x0 + h, y + k3);
-            y = y + (1 / 6) * (k1 + 2 * k2 + 2 * k3 + k4);
-            x0 = x0 + h;
-        }
-        return y;
-    }
 }
 
 module.exports = MiniRedis;
