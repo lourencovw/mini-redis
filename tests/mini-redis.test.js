@@ -75,3 +75,12 @@ test("'SET key' returns 'Check options'", () => {
 // test("'ZRANGE anotherKey 2 30' should return an empty array", () => {
 //     expect(mn.validation('ZRANGE anotherKey 2 30')).toHaveLength(0); 
 // });
+
+test("fictional sum", () => {
+    expect(mn.fictionalFunctionSum(2,2)).toBe(4); 
+});
+
+test("rungeKutta", () => {
+    const fn = (x, y) => x + y;
+    expect(mn.rungeKutta(fn, 1, 0.1, 0.1)).toBe(0.1); 
+});
